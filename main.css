@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    color: #4e4e4e;
+    background-color: #f5f5f5;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+.typed-cursor {
+    display: none;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
+    color: #fff;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding-bottom: 13px;
+}
+.nav-item > a.active::after,
+.nav-item > a::after {
+    position: absolute;
+    content: "";
+    bottom: 10%;
+    left: 0%;
+    height: 3px;
+    background-color: #fff;
+    transform: translate(0%, -10%);
+    transition: width 500ms ease;
+}
+
+.nav-item > a.active::after {
+    width: 40%;
+}
+
+.nav-item > a::after {
+    width: 0%;
+}
+
+.nav-item > a:hover::after {
+    width: 40%;
+}
+.container-hero {
+    background-image: url(./images/intro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+  /* margin-top: 60px; */
+  color: #fff;
+}
+.bglayer-hero {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+.hero-title {
+    color: #fff;
+    font-size: 4.5rem;
+}
+.hero-subtitle {
+    font-size: 2.5rem;
+    border-right: 2px solid #fff;
+    /* width: fit-content;
+    pointer-events: none; */
+}
+#about {
+    padding-block-end: 4rem;
+}
+.container {
+    padding: 20px;
+    /* box-shadow: 0 0 5px whitesmoke; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6), 0 2px 5px 0 rgb(0, 0, 0, 0.2);
+    margin-bottom: 3rem;
+    /* margin-top: 80px;
+    margin-bottom: 20px; */
+}
+/* .container .row .about-data .about-desc {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+} */
+/* .pb-5 .service-container {
+    padding: 5px;
+    box-shadow: 0 0 5px whitesmoke;
+    text-align: left;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+} */
+.about-text {
+    font-size: 32px;
+    color: #1e1e1e;
+    text-transform: capitalize;
+    position: relative;
+}
+.about-text::after {
+    background-color: #0078ff;
+    display: block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+}
+.about-img {
+    width: calc(100% - 30px);
+    margin-inline-end: auto;
+    margin-bottom: 1.25rem;
+}
+.about-img img {
+    border-radius: 0.25rem;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.card-text {
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+.container-skill {
+    width: calc(100% - 50px);
+    margin: auto;
+}
+.services-title {
+    font-size: 3rem;
+    columns: #1e1e1e;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.service-line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+.service-container {
+    max-width: 75rem;
+}
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.feature {
+    background-color: #fff;
+    max-width: calc(100% - 1.1rem);
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    border-radius: 1rem;
+    padding: 2.5rem 1.3rem;
+}
+.feature:hover .feature-icon {
+    color: #fff;
+    background-color: #0078ff;
+    border-color: #cde1f8;
+}
+fs-2 {
+    font-weight: 500;
+    padding: 0.4rem 0;
+    font-size: 1.4rem;
+    color: #1e1e1e;
+}
+.counter-container {
+    background-image: url(./images/counters-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container2 {
+    background-color: #0078ff;
+    opacity: 50%;
+    height: 100vh;
+}
+/* .img-rad {
+    border-radius: 50px solid white;
+} */
+.counterCountainer-wrap {
+    padding-block: 6.25rem;
+}
+.counter__desc {
+    font-size: 1rem;
+}
+.testimon__container {
+    background-image: url(./images/overlay-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+/* .testimon__container {
+    background: #0078ff;
+    opacity: 70%;
+    height: 100vh;
+} */
